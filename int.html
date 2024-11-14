@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem com Efeito de Fogo</title>
+    <link rel="shortcut icon" href="imagen/logo.png" type="image/x-icon">
+    <style>
+        /* Define o fundo da página */
+        body {
+            background-color: #0c3363;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura total da viewport para centralizar verticalmente */
+            margin: 0;
+        }
+
+        /* Centraliza e anima a imagem */
+        img {
+            border-radius: 150%;
+            width: 400px; /* Tamanho inicial da imagem */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave para a imagem e sombra */
+        }
+
+        /* Efeito de expansão e sombra ao passar o mouse */
+        img:hover {
+            transform: scale(1.2); /* Aumenta a imagem em 20% */
+            box-shadow: 0 0 40px 20px rgba(255, 0, 0, 0.9), 0 0 60px 25px #05050569; /* Efeito de fogo neon */
+        }
+    </style>
+</head>
+<body>
+    <!-- Link ao redor da imagem -->
+    <a href="site.html" target="_blank">
+        <img src="imagen/logo.png" alt="Logo">
+    </a>
+</body>
+</html>
